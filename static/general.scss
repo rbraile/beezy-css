@@ -4,7 +4,7 @@
   height: 759px;
   background-image: linear-gradient(289deg, #435ab6, #435ab6 46%, #435ab6 46%, #3f51ad 52%, #142d4c);
   background-size: auto 776px;
-  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
 }
 
 // MAIN 
@@ -102,11 +102,6 @@
     background-size: inherit;
     height: auto;
     background-image: linear-gradient(321deg, #435ab6, #435ab6 46%, #435ab6 46%, #3f51ad 52%, #142d4c);
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
 
   .container {
