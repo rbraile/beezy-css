@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  beezy-css-test:
+    build: .
+   
+    ports:
+      - "14000:3000"
+    environment:
+      - NODE_ENV=development
+    command: "npm run dev"
