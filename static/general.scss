@@ -116,12 +116,18 @@
 
   .central-img-desktop {
     margin-bottom: 20px;
-    width: 50%;
+    width: 30%;
+    height: 30%;
   }
 
   .content {
     width: 100%;
     padding: 0;
+    text-align: center;
+  }
+
+  .newsletter {
+    justify-content: center;
   }
 
 }
@@ -130,6 +136,10 @@
 
   .container {
     text-align: center;
+  }
+  .content {
+    width: 280px;
+    margin: 0 auto;
   }
 
   .logo {
