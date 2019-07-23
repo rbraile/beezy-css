@@ -31,8 +31,7 @@ y el servidor le levanta en http://0.0.0.0:13000
 Es una aplicacion hecha con NextJs react y redux,
 
 la url donde esta hosteada la aplicacion es
-
-
+https://beezy-css.herokuapp.com/
 
 
 ```
