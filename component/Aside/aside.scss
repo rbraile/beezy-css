@@ -1,0 +1,12 @@
+
+.messages {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .messages {
+        display: none;
+    }
+}

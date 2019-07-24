@@ -1,13 +1,13 @@
-import React from "react";
-import css from "./newsletter.scss";
+import React from 'react'
+import './newsletter.scss'
 
 const Newsletter = () => {
   return (
-    <div className={css.newsletter}>
-      <input type="text" placeholder="Your O365 email" />
-      <input type="submit" value="send" />
+    <div className='newsletter'>
+      <input className='field' type='text' placeholder='Your O365 email' />
+      <input className='btn-submit' type='submit' value='send' />
     </div>
-  );
-};
+  )
+}
 
-export default Newsletter;
+export default Newsletter

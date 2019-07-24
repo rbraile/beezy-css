@@ -1,0 +1,132 @@
+@import '../../static/sizes.scss';
+// MAIN 
+.container {
+    display: flex;
+    font-family: 'Segoe UI Bold';
+    font-size: 20px;
+    padding-top: 74px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+// CENTRAL IMAGE
+.central-img-desktop {
+    width: 384px;
+    margin: 0 auto;
+    transition: width 1s;
+    
+    img {
+        width: 100%;
+        opacity: 1;
+        transition: opacity 3s
+    }
+}
+
+.central-img-mobile {
+    display: none;
+    img {
+        opacity: 0;
+        transition: opacity 3s
+    }
+}
+
+// CONTENT 
+.content {
+    width: 60%;
+    padding: 90px 0 0 20px;
+    transition: width 1s;
+}
+
+.logo {
+    margin-bottom: 29px;
+}
+
+.descent-primary {
+    h1 {
+        font-family: "Segoe UI Light";
+        font-size: $font-xl;
+        line-height: 58px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+}
+
+.descent-secondary {
+    h2 {
+        margin-bottom: 48px;
+        font-size: $font-l;
+        line-height: 34px;
+        font-family: 'Segoe UI Regular';
+        opacity: 0.7;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .central-img-desktop {
+        margin-bottom: 20px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        max-width: 132px;
+    }
+
+    .central-img-desktop {
+        display: none;
+        img {
+            opacity: 0;
+        }
+    }
+
+    .central-img-mobile {
+        display: block;
+        margin-bottom: 23px;
+        img {
+            opacity: 1;
+        }
+    }
+
+    .descent-primary {
+        h1 {
+            font-size: $font-l;
+            line-height: 28px;
+            margin-bottom: 9px;
+        }
+    }
+
+    .descent-secondary {
+        h2 {
+            font-size: $font-m;
+            line-height: 24px;
+            color: rgba(255, 255, 255, 0.87);
+            margin-bottom: 26px;
+            padding: 0;
+        }
+    } 
+}

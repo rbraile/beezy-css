@@ -1,2 +1,53 @@
+@import '../../static/sizes.scss';
+
+// NEWSLETTER
 .newsletter {
+    display: flex;
+}
+
+.btn-submit {
+    font-family: 'Segoe UI Bold';
+    font-size: $font-s;
+    background-color: #f05638;
+    border: none;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    width: 120px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+.field {
+    border: none;
+    padding: 15px 0 16px 20px;
+    border-radius: 8px 0 0 8px;
+    display: block;
+    width: 260px;
+    font-family: 'Segoe UI Regular';
+    font-size: $font-ml;
+    line-height: 24px;
+    color: #9fa3a7;
+}
+
+@media only screen and (max-width: 768px) {
+    .newsletter {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .newsletter {
+        display: flex;
+        justify-content: center;
+      }
+  
+    .field {
+      font-family: 'Segoe UI Regular';
+      font-size: $font-m;
+      line-height: 24px;
+    }
+  
+    .btn-submit {
+      padding: 12px 22px;
+    }
 }
