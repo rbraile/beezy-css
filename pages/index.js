@@ -7,7 +7,7 @@ class index extends Component {
   render() {
     return (
       <main className="container">
-        <div className="messages">
+        <aside className="messages">
           <a href="/">
             <img
               src="/static/img/ic-twitter.png"
@@ -24,31 +24,37 @@ class index extends Component {
               alt="Mail"
             />
           </a>
-        </div>
-        <div className="central-img-desktop">
-          <img src="/static/img/iphones-final.png" alt="Iphones" />
-        </div>
-        <div className="content">
-          <img className="logo" src="/static/img/contoso.svg" />
-          <div className="central-img-mobile">
-            <img src="/static/img/phones-mobile.png" alt="Iphones" />
+        </aside>
+        <section className="section">
+          <figure className="central-img-desktop">
+            <img src="/static/img/iphones-final.png" alt="Iphones" />
+          </figure>
+          <div className="content">
+            <figure>
+              <img className="logo" src="/static/img/contoso.svg" />
+            </figure>
+            <figure className="central-img-mobile">
+              <img src="/static/img/phones-mobile.png" alt="Iphones" />
+            </figure>
+            <article className="descent-primary">
+              <h1>Curabitur lobortis d lorem id bibendum ut id consectetur.</h1>
+            </article>
+            <article className="descent-secondary">
+              <h2>
+                Vestibulum rutrum quam vitae fringilla tincidunt amet
+                suspendisse nec tortor
+              </h2>
+            </article>
+            <div className="newsletter">
+              <input
+                className="field"
+                type="text"
+                placeholder="Your O365 email"
+              />
+              <input className="btn-submit" type="submit" value="send" />
+            </div>
           </div>
-          <p className="descent-primary">
-            Curabitur lobortis d lorem id bibendum ut id consectetur.
-          </p>
-          <p className="descent-secondary">
-            Vestibulum rutrum quam vitae fringilla tincidunt amet suspendisse
-            nec tortor
-          </p>
-          <div className="newsletter">
-            <input
-              className="field"
-              type="text"
-              placeholder="Your O365 email"
-            />
-            <input className="btn-submit" type="submit" value="send" />
-          </div>
-        </div>
+        </section>
       </main>
     );
   }

@@ -16,26 +16,42 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  
+}
+
+.section {
+  display: flex;
   justify-content: space-between;
 }
 
 // CENTRAL IMAGE
 .central-img-desktop {
   width: 384px;
-
+  margin: 0 auto;
+  transition: width 1s;
+  
   img {
     width: 100%;
+    opacity: 1;
+    transition: opacity 3s
   }
 }
 
 .central-img-mobile {
   display: none;
+  img {
+    opacity: 0;
+    transition: opacity 3s
+  }
+
 }
 
 // CONTENT 
 .content {
   width: 60%;
   padding: 90px 0 0 20px;
+  transition: width 1s;
+
 }
 
 .logo {
@@ -50,21 +66,24 @@
 }
 
 .descent-primary {
-  font-family: "Segoe UI Light";
-  font-size: 48px;
-  line-height: 58px;
-  color: #ffffff;
-  margin-bottom: 30px;
+  h1 {
+    font-family: "Segoe UI Light";
+    font-size: $font-xl;
+    line-height: 58px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
 }
 
 .descent-secondary {
-  margin-bottom: 48px;
-  font-size: 24px;
-  line-height: 34px;
-  font-family: 'Segoe UI Regular';
-  opacity: 0.7;
-  color: #fff;
-  padding-right: 50px;
+  h2 {
+    margin-bottom: 48px;
+    font-size: $font-l;
+    line-height: 34px;
+    font-family: 'Segoe UI Regular';
+    opacity: 0.7;
+    color: #fff;
+  }
 }
 
 .newsletter {
@@ -73,7 +92,7 @@
 
 .btn-submit {
   font-family: 'Segoe UI Bold';
-  font-size: 14px;
+  font-size: $font-s;
   background-color: #f05638;
   border: none;
   color: #fff;
@@ -90,7 +109,7 @@
   display: block;
   width: 260px;
   font-family: 'Segoe UI Regular';
-  font-size: 20px;
+  font-size: $font-ml;
   line-height: 24px;
   color: #9fa3a7;
 }
@@ -99,6 +118,7 @@
 @media only screen and (max-width: 768px) {
   
   .bg-gradient {
+    min-height: 100vh;
     background-size: inherit;
     height: auto;
     background-image: linear-gradient(321deg, #435ab6, #435ab6 46%, #435ab6 46%, #3f51ad 52%, #142d4c);
@@ -108,6 +128,10 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+  }
+
+  .section {
+    flex-direction: column;
   }
 
   .messages {
@@ -148,30 +172,40 @@
 
   .central-img-desktop {
     display: none;
+    img {
+      opacity: 0;
+    }
   }
 
   .central-img-mobile {
     display: block;
     margin-bottom: 23px;
+    img {
+      opacity: 1;
+    }
   }
 
   .descent-primary {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 9px;
+    h1 {
+      font-size: $font-l;
+      line-height: 28px;
+      margin-bottom: 9px;
+    }
   }
 
   .descent-secondary {
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.87);
-    margin-bottom: 26px;
-    padding: 0;
+    h2 {
+      font-size: $font-m;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.87);
+      margin-bottom: 26px;
+      padding: 0;
+    }
   } 
 
   .field {
     font-family: 'Segoe UI Regular';
-    font-size: 16px;
+    font-size: $font-m;
     line-height: 24px;
   }
 
@@ -183,6 +217,5 @@
     display: flex;
     justify-content: center;
   }
-
 
 }
