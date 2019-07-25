@@ -1,3 +1,7 @@
 @import './sizes.scss';
+@import './colors.scss';
 @import './reset.scss';
 @import './general.scss';
+@import '../component/Aside/aside.scss';
+@import '../component/HomeContent/homeContent.scss';
+@import '../component/Newsletter/newsletter.scss';

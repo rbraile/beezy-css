@@ -1,5 +1,4 @@
 import React from 'react'
-import './newsletter.scss'
 
 const Newsletter = () => {
   return (

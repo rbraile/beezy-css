@@ -1,4 +1,3 @@
-@import '../../static/sizes.scss';
 // MAIN 
 .container {
     display: flex;
@@ -23,17 +22,13 @@
     transition: width 1s;
     
     img {
-        width: 100%;
-        opacity: 1;
-        transition: opacity 3s
+        display: block;
     }
 }
 
 .central-img-mobile {
-    display: none;
     img {
-        opacity: 0;
-        transition: opacity 3s
+        display: none;
     }
 }
 
@@ -78,6 +73,9 @@
         margin-bottom: 20px;
         width: 30%;
         height: 30%;
+        img {
+            width: 100%;
+        }
     }
 
     .content {
@@ -98,17 +96,19 @@
     }
 
     .central-img-desktop {
-        display: none;
         img {
-            opacity: 0;
+            display: none;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
         }
     }
 
     .central-img-mobile {
-        display: block;
         margin-bottom: 23px;
         img {
-            opacity: 1;
+            display: block;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
         }
     }
 
@@ -129,4 +129,14 @@
             padding: 0;
         }
     } 
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }

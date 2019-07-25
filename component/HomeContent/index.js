@@ -1,5 +1,4 @@
 import React from 'react'
-import './homeContent.scss'
 import Newsletter from '../Newsletter'
 
 const HomePage = () => {

@@ -1,8 +1,9 @@
 // GENERAL BACKGROUND
+
 .bg-gradient {
     width: 100%;
     height: 759px;
-    background-image: linear-gradient(289deg, #435ab6, #435ab6 46%, #435ab6 46%, #3f51ad 52%, #142d4c);
+    background-image: linear-gradient(289deg, $gr-dark, $gr-dark 46%, $gr-dark 46%, $gr-medium 52%, $gr-ligth);
     background-size: auto 776px;
     background-repeat: repeat-x;
 }
@@ -13,7 +14,7 @@
         min-height: 100vh;
         background-size: inherit;
         height: auto;
-        background-image: linear-gradient(321deg, #435ab6, #435ab6 46%, #435ab6 46%, #3f51ad 52%, #142d4c);
+        background-image: linear-gradient(321deg, $gr-dark, $gr-dark 46%, $gr-dark 46%, $gr-medium 52%, $gr-ligth);
     }
 
     .container {
