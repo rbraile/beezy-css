@@ -20,7 +20,8 @@
     padding: 15px 0 16px 20px;
     border-radius: 8px 0 0 8px;
     display: block;
-    width: 260px;
+    max-width: 260px;
+    width: 100%;
     font-family: 'Segoe UI Regular';
     font-size: $font-ml;
     line-height: 24px;

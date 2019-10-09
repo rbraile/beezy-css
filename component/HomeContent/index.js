@@ -3,9 +3,10 @@ import Newsletter from '../Newsletter'
 
 const HomePage = () => {
   return (
-    <section className='section'>
+    <>
       <figure className='central-img-desktop'>
         <img
+          role='image'
           srcSet='/static/img/iphones-final@2x.png 2x,
           /static/img/iphones-final@3x.png 3x'
           src='/static/img/iphones-final.png'
@@ -24,18 +25,16 @@ const HomePage = () => {
             alt='Iphones'
           />
         </figure>
-        <article className='descent-primary'>
-          <h1>Curabitur lobortis d lorem id bibendum ut id consectetur.</h1>
-        </article>
-        <article className='descent-secondary'>
-          <h2>
-            Vestibulum rutrum quam vitae fringilla tincidunt amet suspendisse
-            nec tortor
-          </h2>
-        </article>
+        <h1 className='descent-primary'>
+          Curabitur lobortis d lorem id bibendum ut id consectetur.
+        </h1>
+        <h2 className='descent-secondary'>
+          Vestibulum rutrum quam vitae fringilla tincidunt amet suspendisse nec
+          tortor
+        </h2>
         <Newsletter />
       </div>
-    </section>
+    </>
   )
 }
 

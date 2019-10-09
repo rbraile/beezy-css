@@ -7,7 +7,7 @@ import HomeContent from '../component/HomeContent'
 class index extends Component {
   render() {
     return (
-      <main className='container'>
+      <main role='main' className='container'>
         <Aside />
         <HomeContent />
       </main>
